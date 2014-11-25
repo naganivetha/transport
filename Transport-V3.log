@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.17)  25 NOV 2014 11:28
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.17)  25 NOV 2014 14:55
 entering extended mode
 **Transport-V3.tex
-("C:\Users\thiyagan\Documents\Dropbox\TCD\work\Project work\Mn2RuGa\Paper writing\Transport-V3.tex"
+("C:\Users\thiyagan\Documents\Dropbox\TCD\work\Project work\Mn2RuGa\Paper writing\transport\Transport-V3.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, arabic, armenian, assamese, basque, bengali
 , bokmal, bulgarian, catalan, coptic, croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, galic
@@ -1209,7 +1209,7 @@ Class revtex4-1 Info: cite was not loaded (OK!) on input line 27.
 Class revtex4-1 Info: mcite was not loaded (OK!) on input line 27.
 Class revtex4-1 Info: multicol was not loaded (OK!) on input line 27.
 
-("C:\Users\thiyagan\Documents\Dropbox\TCD\work\Project work\Mn2RuGa\Paper writing\Transport-V3.aux")
+("C:\Users\thiyagan\Documents\Dropbox\TCD\work\Project work\Mn2RuGa\Paper writing\transport\Transport-V3.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
@@ -1586,8 +1586,9 @@ LaTeX Info: Redefining \tbond on input line 211.
 LaTeX Info: Redefining \bond on input line 211.
 LaTeX Info: Redefining \dbond on input line 211.
 LaTeX Info: Redefining \tbond on input line 211.
-[2 <C:/Users/thiyagan/Documents/Dropbox/TCD/work/Project work/Mn2RuGa/Paper writing/figures/Transport-V3-figure0.pdf> <C
-:/Users/thiyagan/Documents/Dropbox/TCD/work/Project work/Mn2RuGa/Paper writing/figures/Transport-V3-figure1.pdf>]
+[2 <C:/Users/thiyagan/Documents/Dropbox/TCD/work/Project work/Mn2RuGa/Paper writing/transport/figures/Transport-V3-figur
+e0.pdf> <C:/Users/thiyagan/Documents/Dropbox/TCD/work/Project work/Mn2RuGa/Paper writing/transport/figures/Transport-V3-
+figure1.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed) on input line 212.
 
@@ -1679,8 +1680,9 @@ LaTeX Info: Redefining \tbond on input line 246.
 LaTeX Info: Redefining \bond on input line 247.
 LaTeX Info: Redefining \dbond on input line 247.
 LaTeX Info: Redefining \tbond on input line 247.
-[3 <C:/Users/thiyagan/Documents/Dropbox/TCD/work/Project work/Mn2RuGa/Paper writing/figures/Transport-V3-figure2.pdf> <C
-:/Users/thiyagan/Documents/Dropbox/TCD/work/Project work/Mn2RuGa/Paper writing/figures/Transport-V3-figure3.pdf>]
+[3 <C:/Users/thiyagan/Documents/Dropbox/TCD/work/Project work/Mn2RuGa/Paper writing/transport/figures/Transport-V3-figur
+e2.pdf> <C:/Users/thiyagan/Documents/Dropbox/TCD/work/Project work/Mn2RuGa/Paper writing/transport/figures/Transport-V3-
+figure3.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed) on input line 248.
 
@@ -1695,34 +1697,34 @@ Underfull \hbox (badness 1038) in paragraph at lines 251--252
 \OT1/cmr/m/n/10 edges fi-nan-cial sup-port from IFOX NMP3-LA-2010-
  []
 
-("C:\Users\thiyagan\Documents\Dropbox\TCD\work\Project work\Mn2RuGa\Paper writing\Transport-V3.bbl") [4 <C:/Users/thiyag
-an/Documents/Dropbox/TCD/work/Project work/Mn2RuGa/Paper writing/figures/Transport-V3-figure4.pdf> <C:/Users/thiyagan/Do
-cuments/Dropbox/TCD/work/Project work/Mn2RuGa/Paper writing/figures/Transport-V3-figure5.pdf>]
-("C:\Users\thiyagan\Documents\Dropbox\TCD\work\Project work\Mn2RuGa\Paper writing\Transport-V3.aux") ) 
+("C:\Users\thiyagan\Documents\Dropbox\TCD\work\Project work\Mn2RuGa\Paper writing\transport\Transport-V3.bbl") [4 <C:/Us
+ers/thiyagan/Documents/Dropbox/TCD/work/Project work/Mn2RuGa/Paper writing/transport/figures/Transport-V3-figure4.pdf> <
+C:/Users/thiyagan/Documents/Dropbox/TCD/work/Project work/Mn2RuGa/Paper writing/transport/figures/Transport-V3-figure5.p
+df>] ("C:\Users\thiyagan\Documents\Dropbox\TCD\work\Project work\Mn2RuGa\Paper writing\transport\Transport-V3.aux") ) 
 Here is how much of TeX's memory you used:
  27870 strings out of 494045
- 625823 string characters out of 3148377
+ 625913 string characters out of 3148377
  709037 words of memory out of 3000000
  30632 multiletter control sequences out of 15000+200000
  14463 words of font info for 54 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  63i,16n,74p,2276b,1084s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmti8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Transport-V3.pdf (4 pages, 473144 bytes).
+<C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+mi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+sy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on Transport-V3.pdf (4 pages, 473288 bytes).
 PDF statistics:
  264 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

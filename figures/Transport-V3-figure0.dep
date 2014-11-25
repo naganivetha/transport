@@ -1,0 +1,6 @@
+figures/Transport-V3-figure0.pdf: ./data/cvst.txt
+figures/Transport-V3-figure0.pdf: ./data/NT072-HA.txt
+figures/Transport-V3-figure0.pdf: ./data/NT073-HA.txt
+figures/Transport-V3-figure0.pdf: ./data/NT074-HA.txt
+figures/Transport-V3-figure0.pdf: ./data/NT075-HA.txt
+figures/Transport-V3-figure0.pdf: ./data/NT076-HA.txt

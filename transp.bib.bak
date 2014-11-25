@@ -1,0 +1,408 @@
+% This file was created with JabRef 2.6.
+% Encoding: Cp1252
+
+@ARTICLE{PhysRevB.79.100406,
+  author = {\ifmmode \mbox{\c{S}}\else \c{S}\fi{}a\ifmmode \mbox{\c{s}}\else
+	\c{s}\fi{}\ifmmode \imath \else \i \fi{}o\ifmmode \breve{g}\else
+	\u{g}\fi{}lu, Ersoy},
+  title = {Nonzero macroscopic magnetization in half-metallic antiferromagnets
+	at finite temperatures},
+  journal = {Phys. Rev. B},
+  year = {2009},
+  volume = {79},
+  pages = {100406},
+  month = {Mar},
+  doi = {10.1103/PhysRevB.79.100406},
+  issue = {10},
+  numpages = {4},
+  publisher = {American Physical Society},
+  url = {http://link.aps.org/doi/10.1103/PhysRevB.79.100406}
+}
+
+@INCOLLECTION{Balke2013,
+  author = {Balke, Benjamin and Fecher, GerhardH. and Felser, Claudia},
+  title = {New Heusler Compounds and Their Properties},
+  booktitle = {Spintronics},
+  publisher = {Springer Netherlands},
+  year = {2013},
+  editor = {Felser, Claudia and Fecher, Gerhard H},
+  pages = {15-43},
+  __markedentry = {[nivetha:6]},
+  doi = {10.1007/978-90-481-3832-6_2},
+  isbn = {978-90-481-3831-9},
+  language = {English},
+  owner = {nivetha},
+  timestamp = {2014.11.14},
+  url = {http://dx.doi.org/10.1007/978-90-481-3832-6_2}
+}
+
+@ARTICLE{Chadov2010,
+  author = {Chadov, Stanislav and Qi, Xiaoliang and Kübler, Jürgen and Fecher,
+	Gerhard H. and Felser, Claudia and Zhang, Shou Cheng},
+  title = {Tunable multifunctional topological insulators in ternary Heusler
+	compounds},
+  journal = {Nat Mater},
+  year = {2010},
+  volume = {9},
+  pages = {541--545},
+  number = {7},
+  month = jul,
+  comment = {10.1038/nmat2770},
+  issn = {1476-1122},
+  owner = {nivetha},
+  publisher = {Nature Publishing Group},
+  timestamp = {2014.11.13},
+  url = {http://dx.doi.org/10.1038/nmat2770}
+}
+
+@ARTICLE{Duerr1997,
+  author = {D\"urr, H. A. and van der Laan, G. and Spanke, D. and Hillebrecht,
+	F. U. and Brookes, N. B.},
+  title = {Electron-correlation-induced magnetic order of ultrathin Mn films},
+  journal = {Phys. Rev. B},
+  year = {1997},
+  volume = {56},
+  pages = {8156--8162},
+  month = {Oct},
+  doi = {10.1103/PhysRevB.56.8156},
+  issue = {13},
+  numpages = {0},
+  owner = {nivetha},
+  publisher = {American Physical Society},
+  timestamp = {2014.11.13},
+  url = {http://link.aps.org/doi/10.1103/PhysRevB.56.8156}
+}
+
+@ARTICLE{dorleijn1976,
+  author = {J. W. F Dorleijn},
+  title = {-},
+  journal = {Philips Res. Rep.},
+  year = {1976},
+  volume = {31},
+  pages = {-},
+  owner = {thiyagan},
+  timestamp = {2014.11.20}
+}
+
+@ARTICLE{galanakisJAP2013,
+  author = {Galanakis, I. and \"Ozdo\v{g}an, K. and \c{S}a\c{s}ıo\v{g}lu, E.
+	and Bl\"ugel, S.},
+  title = {Effect of disorder on the magnetic properties of cubic {Mni$_2$Ru$_x$Ga}
+	compounds: A first-principles study},
+  journal = {Journal of Applied Physics},
+  year = {2014},
+  volume = {116},
+  pages = {-},
+  number = {3},
+  eid = {033903},
+  doi = {10.1063/1.4890229},
+  owner = {thiyagan},
+  timestamp = {2014.11.17},
+  url = {http://scitation.aip.org/content/aip/journal/jap/116/3/10.1063/1.4890229}
+}
+
+@ARTICLE{Galanakis2006,
+  author = {I Galanakis and Ph Mavropoulos and P H Dederichs},
+  title = {Electronic structure and Slater–Pauling behaviour in half-metallic
+	Heusler alloys calculated from first principles},
+  journal = {Journal of Physics D: Applied Physics},
+  year = {2006},
+  volume = {39},
+  pages = {765},
+  number = {5},
+  abstract = {Intermetallic Heusler alloys are amongst the most attractive half-metallic
+	systems due to their high Curie temperatures and their structural
+	similarity to binary semiconductors. In this review we present an
+	overview of the basic electronic and magnetic properties of both
+	Heusler families: the so-called half-Heusler alloys like NiMnSb and
+	the full-Heusler alloys like Co 2 MnGe. Ab initio results suggest
+	that both the electronic and magnetic properties in these compounds
+	are intrinsically related to the appearance of the minority-spin
+	gap. The total spin magnetic moment M t scales linearly with the
+	number of the valence electrons Z t , such that M t = Z t − 24
+	for the full-Heusler and M t = Z t − 18 for the half-Heusler alloys,
+	thus opening the way to engineer new half-metallic alloys with the
+	desired magnetic properties.},
+  owner = {thiyagan},
+  timestamp = {2014.11.20},
+  url = {http://stacks.iop.org/0022-3727/39/i=5/a=S01}
+}
+
+@INCOLLECTION{Graf2013,
+  author = {Tanja Graf and Jürgen Winterlik and Lukas Müchler and Gerhard H.
+	Fecher and Claudia Felser and Stuart S.P. Parkin},
+  title = {Chapter One - Magnetic Heusler Compounds},
+  booktitle = {-},
+  publisher = {Elsevier},
+  year = {2013},
+  editor = {K.H.J. Buschow},
+  volume = {21},
+  series = {Handbook of Magnetic Materials },
+  pages = {1 - 75},
+  abstract = {Abstract Heusler compounds are a remarkable class of intermetallic
+	materials with 1:1:1 (often called Half-Heusler) or 2:1:1 composition
+	comprising more than 1500 members. New properties and potential fields
+	of applications emerge constantly; the prediction of topological
+	insulators is the most recent example. Surprisingly, the properties
+	of many Heusler compounds can easily be predicted by the valence
+	electron count or within a rigid band approach. The wide range of
+	the multifunctional properties of Heusler compounds is reflected
+	in extraordinary magnetooptical, magnetoelectronic, and magnetocaloric
+	properties. Co2-Heusler compounds are predicted and proven half-metallic
+	ferromagnets showing Slater–Pauling type behavior. The recently
+	discovered Mn2-Heusler compounds are another class of half metallic
+	Heusler compounds which even can be designed to be compensated ferrimagnets.
+	Tetragonal Heusler compounds Mn2YZ as potential materials for \{STT\}
+	applications can be easily designed by positioning the Fermi energy
+	at the van Hove singularity in one of the spin channels. },
+  doi = {http://dx.doi.org/10.1016/B978-0-444-59593-5.00001-5},
+  issn = {1567-2719},
+  keywords = {Heusler},
+  owner = {nivetha},
+  timestamp = {2014.11.13},
+  url = {http://www.sciencedirect.com/science/article/pii/B9780444595935000015}
+}
+
+@ARTICLE{PhysRevLett.50.2024,
+  author = {de Groot, R. A. and Mueller, F. M. and Engen, P. G. van and Buschow,
+	K. H. J.},
+  title = {New Class of Materials: Half-Metallic Ferromagnets},
+  journal = {Phys. Rev. Lett.},
+  year = {1983},
+  volume = {50},
+  pages = {2024--2027},
+  month = {Jun},
+  doi = {10.1103/PhysRevLett.50.2024},
+  issue = {25},
+  owner = {thiyagan},
+  publisher = {American Physical Society},
+  timestamp = {2014.11.17},
+  url = {http://link.aps.org/doi/10.1103/PhysRevLett.50.2024}
+}
+
+@ARTICLE{neutronMRG,
+  author = {Hori, T. and Akimitsu, M. and Miki, H. and Ohoyoama, K. and Yamaguchi,
+	Y.},
+  title = {Magnetic properties of {(Mn$_{1-x}$Ru$_x$)$_3$Ga} alloys},
+  journal = {Applied Physics A},
+  year = {2002},
+  volume = {74},
+  pages = {s737-s739},
+  number = {1},
+  doi = {10.1007/s003390101148},
+  issn = {0947-8396},
+  keywords = {PACS: 75.25.+z; 75.50Gg},
+  language = {English},
+  owner = {thiyagan},
+  publisher = {Springer-Verlag},
+  timestamp = {2014.11.17},
+  url = {http://dx.doi.org/10.1007/s003390101148}
+}
+
+@ARTICLE{Hu2012,
+  author = {Hu, Xiao},
+  title = {Half-Metallic Antiferromagnet as a Prospective Material for Spintronics},
+  journal = {Advanced Materials},
+  year = {2012},
+  volume = {24},
+  pages = {294--298},
+  number = {2},
+  abstract = {Spintronics is expected as the next-generation technology based on
+	the novel notch of spin degree of freedom of electrons. Half-metals,
+	a class of materials which behave as a metal in one spin direction
+	and an insulator in the opposite spin direction, are ideal for spintronic
+	applications. Half-metallic antiferromagnets as a subclass of half-metals
+	are characterized further by totally compensated spin moments in
+	a unit cell, and have the advantage of being able to generate fully
+	spin-polarized current while exhibiting zero macroscopic magnetization.
+	Considerable efforts have been devoted to the search for this novel
+	material, from which we may get useful insights for prospective material
+	exploration.},
+  doi = {10.1002/adma.201102555},
+  issn = {1521-4095},
+  keywords = {spintronics, half-metals, band structure, spin-polarized current,
+	first principles calculation},
+  owner = {thiyagan},
+  publisher = {WILEY-VCH Verlag},
+  timestamp = {2014.11.20},
+  url = {http://dx.doi.org/10.1002/adma.201102555}
+}
+
+@ARTICLE{PhysRevB.28.1745,
+  author = {K\"ubler, J. and William, A. R. and Sommers, C. B.},
+  title = {Formation and coupling of magnetic moments in Heusler alloys},
+  journal = {Phys. Rev. B},
+  year = {1983},
+  volume = {28},
+  pages = {1745--1755},
+  month = {Aug},
+  doi = {10.1103/PhysRevB.28.1745},
+  issue = {4},
+  numpages = {0},
+  publisher = {American Physical Society},
+  url = {http://link.aps.org/doi/10.1103/PhysRevB.28.1745}
+}
+
+@ARTICLE{Kim2001,
+  author = {Kim, T. W. and Lim, S. H. and Gambino, R. J.},
+  title = {Spontaneous Hall effect in amorphous Tb–Fe and Sm–Fe thin films},
+  journal = {Journal of Applied Physics},
+  year = {2001},
+  volume = {89},
+  pages = {7212-7214},
+  number = {11},
+  __markedentry = {[thiyagan]},
+  doi = {http://dx.doi.org/10.1063/1.1357117},
+  owner = {thiyagan},
+  timestamp = {2014.11.20},
+  url = {http://scitation.aip.org/content/aip/journal/jap/89/11/10.1063/1.1357117}
+}
+
+@ARTICLE{KurtPRL2014,
+  author = {Kurt, H. and Rode, K. and Stamenov, P. and Venkatesan, M. and Lau,
+	Y.-C. and Fonda, E. and Coey, J. M. D.},
+  title = {Cubic {Mn$_2$Ga} Thin Films: {C}rossing the Spin Gap with Ruthenium},
+  journal = {Phys. Rev. Lett.},
+  year = {2014},
+  volume = {112},
+  pages = {027201},
+  month = {Jan},
+  doi = {10.1103/PhysRevLett.112.027201},
+  issue = {2},
+  numpages = {5},
+  owner = {thiyagan},
+  publisher = {American Physical Society},
+  timestamp = {2014.11.17},
+  url = {http://link.aps.org/doi/10.1103/PhysRevLett.112.027201}
+}
+
+@ARTICLE{PhysRevLett.74.1171,
+  author = {H. van Leuken and R. A. de Groot},
+  title = {Half-Metallic Antiferromagnets},
+  journal = {Phys. Rev. Lett.},
+  year = {1995},
+  volume = {74},
+  pages = {1171--1173},
+  month = {Feb},
+  doi = {10.1103/PhysRevLett.74.1171},
+  issue = {7},
+  owner = {thiyagan},
+  publisher = {American Physical Society},
+  timestamp = {2014.11.17},
+  url = {http://link.aps.org/doi/10.1103/PhysRevLett.74.1171}
+}
+
+@ARTICLE{Lin2010,
+  author = {Lin, Hsin and Wray, L. Andrew and Xia, Yuqi and Xu, Suyang and Jia,
+	Shuang and Cava, Robert J. and Bansil, Arun and Hasan, M. Zahid},
+  title = {Half-Heusler ternary compounds as new multifunctional experimental
+	platforms for topological quantum phenomena},
+  journal = {Nat Mater},
+  year = {2010},
+  volume = {9},
+  pages = {546--549},
+  number = {7},
+  month = jul,
+  __markedentry = {[nivetha:]},
+  comment = {10.1038/nmat2771},
+  issn = {1476-1122},
+  owner = {nivetha},
+  publisher = {Nature Publishing Group},
+  timestamp = {2014.11.14},
+  url = {http://dx.doi.org/10.1038/nmat2771}
+}
+
+@UNPUBLISHED{Mariounpup,
+  author = {Mario Zic, Thomas Archer, Stefano Sanvito},
+  title = {-},
+  note = {-},
+  owner = {thiyagan},
+  timestamp = {2014.11.20}
+}
+
+@ARTICLE{Takahashi2011,
+  author = {Takahashi, Y. K. and Srinivasan, A. and Varaprasad, B. and Rajanikanth,
+	A. and Hase, N. and Nakatani, T. M. and Kasai, S. and Furubayashi,
+	T. and Hono, K.},
+  title = {Large magnetoresistance in current-perpendicular-to-plane pseudospin
+	valve using a Co2Fe(Ge0.5Ga0.5) Heusler alloy},
+  journal = {Applied Physics Letters},
+  year = {2011},
+  volume = {98},
+  pages = {-},
+  number = {15},
+  eid = {152501},
+  doi = {http://dx.doi.org/10.1063/1.3576923},
+  owner = {thiyagan},
+  timestamp = {2014.11.20},
+  url = {http://scitation.aip.org/content/aip/journal/apl/98/15/10.1063/1.3576923}
+}
+
+@ARTICLE{Tsunegi2008,
+  author = {Tsunegi, Sumito and Sakuraba, Yuya and Oogane, Mikihiko and Takanashi,
+	Koki and Ando, Yasuo},
+  title = {Large tunnel magnetoresistance in magnetic tunnel junctions using
+	a Co2MnSi Heusler alloy electrode and a MgO barrier},
+  journal = {Applied Physics Letters},
+  year = {2008},
+  volume = {93},
+  pages = {-},
+  number = {11},
+  eid = {112506},
+  doi = {http://dx.doi.org/10.1063/1.2987516},
+  owner = {thiyagan},
+  timestamp = {2014.11.20},
+  url = {http://scitation.aip.org/content/aip/journal/apl/93/11/10.1063/1.2987516}
+}
+
+@ARTICLE{Wang2009,
+  author = {Wang, Wenhong and Sukegawa, Hiroaki and Shan, Rong and Mitani, Seiji
+	and Inomata, Koichiro},
+  title = {Giant tunneling magnetoresistance up to 330% at room temperature
+	in sputter deposited Co2FeAl/MgO/CoFe magnetic tunnel junctions},
+  journal = {Applied Physics Letters},
+  year = {2009},
+  volume = {95},
+  pages = {-},
+  number = {18},
+  eid = {182502},
+  doi = {http://dx.doi.org/10.1063/1.3258069},
+  owner = {thiyagan},
+  timestamp = {2014.11.20},
+  url = {http://scitation.aip.org/content/aip/journal/apl/95/18/10.1063/1.3258069}
+}
+
+@ARTICLE{Wurmehl2006,
+  author = {Sabine Wurmehl and Hem C Kandpal and Gerhard H Fecher and Claudia
+	Felser},
+  title = {Valence electron rules for prediction of half-metallic compensated-ferrimagnetic
+	behaviour of Heusler compounds with complete spin polarization},
+  journal = {Journal of Physics: Condensed Matter},
+  year = {2006},
+  volume = {18},
+  pages = {6171},
+  number = {27},
+  abstract = {In this work, a rule for predicting half-metallic compensated-ferrimagnets
+	in the class of Heusler compounds will be described. This concept
+	results from combining the well-known Slater–Pauling rule with
+	the Kübler rule. The Kübler rule states that Mn on the Y position
+	in Heusler compounds tends to a highly localized magnetic moment.
+	When strictly following this new rule, some candidates in the class
+	of Heusler compounds are expected to be completely compensated-ferrimagnetic
+	but with a spin polarization of 100% at the Fermi energy. This rule
+	is applied to three examples within the class of Heusler compounds.
+	All discussion of the materials is supported by electronic structure
+	calculations.},
+  owner = {thiyagan},
+  timestamp = {2014.11.20},
+  url = {http://stacks.iop.org/0953-8984/18/i=27/a=001}
+}
+
+@comment{jabref-meta: selector_publisher:}
+
+@comment{jabref-meta: selector_author:}
+
+@comment{jabref-meta: selector_journal:}
+
+@comment{jabref-meta: selector_keywords:}
+

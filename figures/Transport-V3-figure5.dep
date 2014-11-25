@@ -1,0 +1,6 @@
+figures/Transport-V3-figure5.pdf: ./data/gmr2k.txt
+figures/Transport-V3-figure5.pdf: ./data/gmr25k.txt
+figures/Transport-V3-figure5.pdf: ./data/gmr100k.txt
+figures/Transport-V3-figure5.pdf: ./data/gmr200k.txt
+figures/Transport-V3-figure5.pdf: ./data/gmr.txt
+figures/Transport-V3-figure5.pdf: ./data/gmrfit.txt

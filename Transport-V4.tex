@@ -4,6 +4,7 @@
 \usepackage[version=3]{mhchem}
 \usepackage[utf8]{inputenc}
 \usepackage{natbib}
+%\usepackage{stackengine}
 
 \DeclareSIUnit\BohrMagneton{$\mu_B$}
 \DeclareSIUnit\formulaunit{f.u.}
@@ -90,7 +91,7 @@ The crystal structure of the cubic \ce{MRG} films with different thickness and c
 
 %fig 1 - SQUID ok - is it needed? 
 \begin{figure}
-\includegraphics[width=1.0\columnwidth]{Transport-Fig1.pdf}
+\includegraphics[width=1.5\columnwidth]{Transport-Fig1.pdf}
 \caption{In-plane and out-of-plane magnetization loops of \ce{Mn2Ru$_x$Ga} sample of thickness \SI{70}{\nano\metre}, measured in a SQUID magnetometer at \SI{300}{\kelvin}.}
 \label{fig:squid}
 \end{figure}
@@ -122,7 +123,7 @@ As shown in Fig. \ref{fig:xrd}, the \ce{MRG} films are increasingly strained as 
 
 %fig 5 GMR goes here (six figures seems way too many!)
 \begin{figure}
-\includegraphics[width=1.0\columnwidth]{Transport-Fig5.pdf}
+\includegraphics[width=1.0\columnwidth]{Transport-Fig5.pdf}\llap{\includegraphics[width=0.3\columnwidth]{Transport-Fig5in.pdf}}
 \caption{MR of a pseudo spin valve \ce{Mn2Ru$_x$Ga}(15)/\ce{Cu}(2.8)/[\ce{Co}(0.2)/\ce{Pd}(0.6)]$_6$/\ce{Ta}(\SI{3}{\nano\metre})  measured at various temperatures. The curves have been offset vertically for clarity.  The inset shows the temperature variation of the GMR contribution with a fit to $T^{0.5}$ dependence.}
 \label{fig:gmr}
 \end{figure}
@@ -137,7 +138,8 @@ The initial demonstration of magnetoresistance in pseudo-spin-valves with an \ce
  
 \section{Acknowledgements}
 \label{sec:acknowledgements}
-This work was supported by AMBER. KR acknowledges financial support from IFOX NMP3-LA-2010-246102. DB acknowledges financial support from IRCSET. We would also like to acknowledge Mario $\check{Z}$ic and Thomas Archer for their fruitful discussions.
+This work was supported by Science Foundation Ireland through AMBER, and from grant 13/ERC/I2561. KR acknowledges financial support from the
+European Community's Seventh Framework Programme IFOX, NMP3-LA-2010-246102. DB acknowledges financial support from IRCSET. The research leading to these results has received funding from the European Community's Seventh Framework Programme (FP7/2007-2013) under grant agreement n.~$^{\circ}$312284(CALIPSO). The authors would like to thank H. Kurt, M. \v{Z}ic and T. Archer for fruitful discussions.
 
 \bibliography{transp}
 \end{document}

@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.17)  26 NOV 2014 17:09
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.17)  26 NOV 2014 17:35
 entering extended mode
-**Transport-Fig1.tex
-("C:\Users\thiyagan\Documents\Dropbox\TCD\work\Project work\Mn2RuGa\Paper writing\transport\Transport-Fig1.tex"
+**Transport-Fig5in.tex
+("C:\Users\thiyagan\Documents\Dropbox\TCD\work\Project work\Mn2RuGa\Paper writing\transport\Transport-Fig5in.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, arabic, armenian, assamese, basque, bengali
 , bokmal, bulgarian, catalan, coptic, croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, galic
@@ -1128,7 +1128,7 @@ File: tikzlibrarybackgrounds.code.tex 2010/02/08 v2.10 (rcs-revision 1.2)
 LaTeX Warning: Unused global option(s):
     [tikz].
 
-("C:\Users\thiyagan\Documents\Dropbox\TCD\work\Project work\Mn2RuGa\Paper writing\transport\Transport-Fig1.aux")
+("C:\Users\thiyagan\Documents\Dropbox\TCD\work\Project work\Mn2RuGa\Paper writing\transport\Transport-Fig5in.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
@@ -1243,29 +1243,26 @@ File: siunitx-binary.cfg 2011/09/13 v2.3f siunitx: Binary units
 )
 \c_siunitx_mathsf_int=\count307
 \c_siunitx_mathtt_int=\count308
-PGFPlots: reading {./data/squid.txt}
-PGFPlots: reading {./data/squid.txt}
+PGFPlots: reading {./data/gmr.txt}
+PGFPlots: reading {./data/gmrfit.txt}
 
 Preview: Tightpage -32891 -32891 32891 32891
 [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-("C:\Users\thiyagan\Documents\Dropbox\TCD\work\Project work\Mn2RuGa\Paper writing\transport\Transport-Fig1.aux") ) 
+("C:\Users\thiyagan\Documents\Dropbox\TCD\work\Project work\Mn2RuGa\Paper writing\transport\Transport-Fig5in.aux") ) 
 Here is how much of TeX's memory you used:
- 25959 strings out of 494045
- 606693 string characters out of 3148377
- 773118 words of memory out of 3000000
- 28778 multiletter control sequences out of 15000+200000
- 10322 words of font info for 40 fonts, out of 3000000 for 9000
+ 25231 strings out of 494045
+ 587203 string characters out of 3148377
+ 679056 words of memory out of 3000000
+ 28054 multiletter control sequences out of 15000+200000
+ 8712 words of font info for 34 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 63i,18n,83p,680b,2134s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Transport-Fig1.pdf (1 page, 90887 bytes).
+ 63i,10n,82p,682b,2085s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr8.pfb>
+Output written on Transport-Fig5in.pdf (1 page, 25867 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
+ 17 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

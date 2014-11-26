@@ -1,0 +1,27 @@
+%fig 1 - SQUID ok - is it needed? 
+\documentclass[tikz]{standalone}
+\usepackage{pgfplots} 
+\usepackage[product-units = power]{siunitx}
+\usepackage[version=3]{mhchem}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+
+\DeclareSIUnit\BohrMagneton{$\mu_B$}
+\DeclareSIUnit\formulaunit{f.u.}
+\DeclareSIUnit\atomicunit{a.u.}
+\DeclareSIUnit\arbunit{arb.unit}
+
+\pgfplotsset{small,width = 8cm, every axis/.append style={ylabel near ticks, thick, tick style={semithick}}}
+
+\begin{document}
+\providecommand{\plotdataDir}{data}
+
+\begin{tikzpicture}
+	\begin{axis}[grid=both, xmin=-5,xmax=5,ymin=-15,ymax=15,xlabel=$\mu_0H$ (\SI{}{\tesla}),ylabel = Moment (\SI{}{\kilo\ampere\per\metre}),legend pos = north west]
+		\addplot+[mark=+,black, smooth] table [x expr = \thisrowno{0},y expr = \thisrowno{1}/1000]{./data/squid.txt};
+		\addplot+[mark=x,red, smooth] table [x expr = \thisrowno{2},y expr = \thisrowno{3}/1000]{./data/squid.txt};
+		\legend{in-plane,out-of-plane}	
+	\end{axis}
+\end{tikzpicture}
+
+\end{document}

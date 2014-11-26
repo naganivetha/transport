@@ -1,0 +1,34 @@
+%figure3 - Ru conc ms and ehe params
+\documentclass[tikz]{standalone}
+\usepackage{pgfplots} 
+\usepackage[product-units = power]{siunitx}
+\usepackage[version=3]{mhchem}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\DeclareSIUnit\BohrMagneton{$\mu_B$}
+\DeclareSIUnit\formulaunit{f.u.}
+\DeclareSIUnit\atomicunit{a.u.}
+\DeclareSIUnit\arbunit{arb.unit}
+
+\pgfplotsset{small,width = 8cm, every axis/.append style={ylabel near ticks, thick, tick style={semithick}}}
+
+\begin{document}
+\providecommand{\plotdataDir}{data}
+
+\begin{tikzpicture}
+\begin{axis}[name=plot1,height=4cm,xmin=0.6, xmax=1.1,ymin=-0.15,ymax=0.3, xticklabels={,,}, ylabel = $M_s$ (\SI{}{\BohrMagneton\per\formulaunit})]
+		\addplot+[mark=square,black,only marks, mark size = 3] table [x expr=\thisrowno{0},y expr = \thisrowno{1}]{./data/ruconc.txt}; 
+		\addplot+[mark=none,black,smooth,very thick] table {./data/fitlin.txt};
+		\node at (axis cs:0.625,0.21) {(a)};
+\end{axis}
+\begin{axis}[name=plot2,at={($(plot1.south)$)},anchor=north,height=4cm,xmin=0.6, xmax=1.1,ymin=0,ymax=2.2, hide x axis,  axis y line*=left, ylabel = $\mu_0H_c$ (\SI{}{\tesla})]
+		\addplot+[mark=o,blue,smooth, tension=0.001, mark size = 3, very thick] table [x expr=\thisrowno{0},y expr = \thisrowno{2}]{./data/ruconc3.txt}; 	
+		\node at (axis cs:0.625,2) {(a)};
+\end{axis}
+\begin{axis}[name=plot3,at={($(plot1.south)$)},anchor=north,height=4cm,xmin=0.6, xmax=1.1,ymin=-6,ymax=6, axis y line*=right, xlabel = Ru concentration ($x$), ylabel = SHA (\%)]
+		\addplot+[mark=triangle,red,smooth, tension=0.001, mark size = 3, very thick] table [x expr=\thisrowno{0},y expr = \thisrowno{3}]{./data/ruconc3.txt}; 	
+\end{axis}
+\end{tikzpicture}
+\end{document}

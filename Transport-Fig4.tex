@@ -1,0 +1,49 @@
+%fig 4 on strain/thickness goes here
+\documentclass[tikz]{standalone}
+\usepackage{pgfplots} 
+\usepackage[product-units = power]{siunitx}
+\usepackage[version=3]{mhchem}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\DeclareSIUnit\BohrMagneton{$\mu_B$}
+\DeclareSIUnit\formulaunit{f.u.}
+\DeclareSIUnit\atomicunit{a.u.}
+\DeclareSIUnit\arbunit{arb.unit}
+
+\pgfplotsset{small,width = 8cm, every axis/.append style={ylabel near ticks, thick, tick style={semithick}}}
+
+\begin{document}
+\providecommand{\plotdataDir}{data}
+
+\begin{tikzpicture}
+	\begin{axis} [name=plota,height=5cm,xmin=0,xmax=400,ymin=-0.005,ymax=0.05,xticklabels={,,}, ylabel = $\delta R_{XY}/\delta T$ (\SI{}{\ohm\per\kelvin}),legend style={legend pos=north west,font=\tiny},]
+		\addplot+[mark=none,black,solid,smooth, very thick] table [x expr = \thisrowno{0}, y expr = \thisrowno{1}]{./data/rvst.txt};
+		\addplot+[mark=none,red,dotted,smooth, very thick] table [x expr = \thisrowno{2}, y expr = \thisrowno{3}]{./data/rvst.txt};
+		\addplot+[mark=none,blue,dashed,smooth, very thick] table [x expr = \thisrowno{4}, y expr = \thisrowno{5}]{./data/rvst.txt};
+		\addplot+[mark=none,green,densely dotted,smooth, very thick] table [x expr = \thisrowno{6}, y expr = \thisrowno{7}]{./data/rvst.txt};
+		%\node at (axis cs:235,0.025) {$T_M=\SI{235}{\kelvin}$};
+		%\node at (axis cs:278,0.031) {$T_M=\SI{278}{\kelvin}$};
+		%\node at (axis cs:335,0.045) {$T_M=\SI{335}{\kelvin}$};
+		%\node at (axis cs:387,0.025) {$T_M=\SI{387}{\kelvin}$};	
+		\legend{\SI{70}{\nano\metre},\SI{34}{\nano\metre},\SI{16}{\nano\metre},\SI{8}{\nano\metre}}	
+	\end{axis}
+	\begin{axis} [name=plotb,at={($(plota.south)$)},anchor=north,height=5cm,xmin=0,xmax=400,ymin=-0.5,ymax=10,xticklabels={,,}, ylabel = $\mu_0H_C$ (\SI{}{\tesla}),legend style={legend pos=north west,font=\tiny}]
+		\addplot+[mark=o,black,smooth, very thick, mark size=2,unbounded coords=discard] table [x expr = \thisrowno{0}, y expr = \thisrowno{1}/10]{./data/Hct.txt};
+		\addplot+[mark=square,red,smooth, very thick,mark size=2,unbounded coords=discard] table [x expr = \thisrowno{0}, y expr = \thisrowno{2}/10]{./data/Hct.txt};
+		\addplot+[mark=triangle,blue,smooth, very thick,mark size=2,unbounded coords=discard] table [x expr = \thisrowno{0}, y expr = \thisrowno{3}/10]{./data/Hct.txt};
+		\addplot+[mark=+,green,,smooth, very thick,mark size=2,unbounded coords=discard] table [x expr = \thisrowno{0}, y expr = \thisrowno{4}/10]{./data/Hct.txt};
+		\addplot+[mark=x,orange,smooth, very thick,mark size=2,unbounded coords=discard] table [x expr = \thisrowno{0}, y expr = \thisrowno{5}/10]{./data/Hct.txt};
+		\legend{\SI{70}{\nano\metre},\SI{34}{\nano\metre},\SI{16}{\nano\metre},\SI{8}{\nano\metre},\SI{4}{\nano\metre}}	
+	\end{axis}
+	\begin{axis} [name=plotc,at={($(plotb.south)$)},anchor=north,height=5cm,xmin=0,xmax=400,ymin=-2,ymax=2.2,xlabel= Temperature (\SI{}{\kelvin}), ylabel = SHA (\%),legend style={legend pos=north west,font=\tiny}]
+		\addplot+[mark=o,black,smooth, very thick, mark size=2,unbounded coords=discard] table [x expr = \thisrowno{0}, y expr = \thisrowno{1}]{./data/SHAt.txt};
+		\addplot+[mark=square,red,smooth, very thick,mark size=2,unbounded coords=discard] table [x expr = \thisrowno{0}, y expr = \thisrowno{2}]{./data/SHAt.txt};
+		\addplot+[mark=triangle,blue,smooth, very thick,mark size=2,unbounded coords=discard] table [x expr = \thisrowno{0}, y expr = \thisrowno{3}]{./data/SHAt.txt};
+		\addplot+[mark=+,green,,smooth, very thick,mark size=2,unbounded coords=discard] table [x expr = \thisrowno{0}, y expr = \thisrowno{4}]{./data/SHAt.txt};
+		\addplot+[mark=x,orange,smooth, very thick,mark size=2,unbounded coords=discard] table [x expr = \thisrowno{0}, y expr = \thisrowno{5}]{./data/SHAt.txt};
+		%\legend{\SI{70}{\nano\metre},\SI{34}{\nano\metre},\SI{16}{\nano\metre},\SI{8}{\nano\metre},\SI{4}{\nano\metre}}	
+	\end{axis}
+\end{tikzpicture}
+\end{document}

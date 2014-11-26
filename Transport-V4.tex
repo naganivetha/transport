@@ -11,20 +11,6 @@
 \DeclareSIUnit\arbunit{arb.unit}
 \DeclareSIUnit\torr{Torr}
 
-\usepackage{pgfplots}
-\usepackage{tikz}
-\usepackage{pdfpages}
-
-\pgfplotsset{small,width=\columnwidth, every axis/.append style={ylabel near ticks, thick, tick style={semithick}}}
-\usetikzlibrary{backgrounds}
-\usepgfplotslibrary{groupplots}
-\usetikzlibrary{positioning}
-%\usetikzlibrary{external}
-\usepgfplotslibrary{external}
-\tikzsetexternalprefix{figures/}
-\tikzexternalize
-%\tikzexternalize[shell escape=-enable-write18]
-
 \begin{document}
 
 %title, authors, affiliations
@@ -93,149 +79,50 @@ Here we report on the temperature, composition and thickness dependent transport
 \section{Results and Discussion}
 \label{sec:results_discussion}
 
-%fig 1 - XRD - some tweaking
+%fig 0 - XRD - some tweaking
 \begin{figure}
-\begin{tikzpicture}
-	\begin{axis}[xshift=0.4\columnwidth, yshift=3.75cm, xlabel = thickness (\SI{}{\nano\metre}), ylabel = c (\SI{}{\angstrom}),xlabel near ticks, tiny]
-		\addplot table {./data/cvst.txt};
-	\end{axis}
-	\begin{axis}[xmin=39,xmax=64,ymin=2,ymax=10000,ymode=log,xlabel=$2\theta$ (\SI{}{\degree}),ylabel=Intensity (\SI{}{\arbunit})]
-		\addplot[domain=39:64,black,very thick] table[x expr=\thisrowno{0},y expr = \thisrowno{2}]{./data/NT072-HA.txt};
-		\addplot[domain=39:64,red,very thick] table[x expr=\thisrowno{0},y expr = \thisrowno{2}]{./data/NT073-HA.txt};
-		\addplot[domain=39:64,blue,very thick] table[x expr=\thisrowno{0},y expr = \thisrowno{2}]{./data/NT074-HA.txt};
-		\addplot[domain=39:64,green,very thick] table[x expr=\thisrowno{0},y expr = \thisrowno{2}]{./data/NT075-HA.txt};
-		\addplot[domain=39:64,orange,very thick] table[x expr=\thisrowno{0},y expr = \thisrowno{2}]{./data/NT076-HA.txt};
-		%\node at (axis cs:31,2000) [rotate=90] {MRG (002)};
-		\node at (axis cs:41,2000) [rotate=90] {MgO (002)};
-		\node at (axis cs:62.5,2000) [rotate=90] {MRG (004)};
-	\end{axis}
-\end{tikzpicture}
+\includegraphics[width=1.0\columnwidth]{Transport-Fig0.pdf}
 \caption{XRD of thin films of \ce{Mn2Ru$_x$Ga} of thickness from \SIrange{70}{4}{\nano\metre} grown on \ce{MgO} substrates. Inset shows the dependence of the out-of-plane lattice parameter (c) on the thickness of the film, indicating that the substrate induced strain is increasingly relaxed as the thickness increases.}
 \label{fig:xrd}
 \end{figure}
 
 The crystal structure of the cubic \ce{MRG} films with different thickness and compositions were probed using $2\theta-\theta$ x-ray diffraction (XRD) as shown in Fig. \ref{fig:xrd}. The out-of-plane lattice parameter, $c$, is between \SI{0.598}{\nano\metre} and \SI{0.618}{\nano\metre}, depending on the \ce{Ru} concentration and film thickness (insert of Fig. \ref{fig:xrd}). The in-plane lattice parameter, $a$, determined from reciprocal space maps was found to be \SI{0.596}{\nano\metre} for all samples, which is precisely matched to that of the \ce{MgO} substrate ($\sqrt{2} a_0\left(\ce{MgO} \right) = \SI{0.5956}{\nano\metre}$). This confirms the cubic nature of the \ce{MRG} films with a slight tetragonal out-of-plane distortion ($c/a-1$ between \num{1.8}\% and \num{3.6}\%).
-%fig 2 - SQUID ok - is it needed? 
+
+%fig 1 - SQUID ok - is it needed? 
 \begin{figure}
-\begin{tikzpicture}
-	\begin{axis}[grid=both, xmin=-5,xmax=5,ymin=-15,ymax=15,xlabel=$\mu_0H$ (\SI{}{\tesla}),ylabel = Moment (\SI{}{\kilo\ampere\per\metre}),legend pos = north west]
-		\addplot+[mark=+,black, smooth] table [x expr = \thisrowno{0},y expr = \thisrowno{1}/1000]{./data/squid.txt};
-		\addplot+[mark=x,red, smooth] table [x expr = \thisrowno{2},y expr = \thisrowno{3}/1000]{./data/squid.txt};
-		\legend{in-plane,out-of-plane}	
-	\end{axis}
-\end{tikzpicture}
+\includegraphics[width=1.0\columnwidth]{Transport-Fig1.pdf}
 \caption{In-plane and out-of-plane magnetization loops of \ce{Mn2Ru$_x$Ga} sample of thickness \SI{70}{\nano\metre}, measured in a SQUID magnetometer at \SI{300}{\kelvin}.}
 \label{fig:squid}
 \end{figure}
 
-%fig 3 - ehe curves of Ru_conc and temp dependence? 
+%fig 2 - ehe curves of Ru_conc and temp dependence? 
 \begin{figure}
-\begin{tikzpicture}
-	\begin{axis}[name = plotru,xmin=-2,xmax=2,ymin=-0.6,ymax=0.6,ylabel = $R_{XY}$ (\SI{}{\ohm}),legend style={legend pos=south west}]
-		\addplot+[mark=none,black,dotted,very thick] table {./data/NT046EHE.txt};
-		\addplot+[mark=none,red,dashed,very thick] table {./data/NT055EHE.txt};
-		\addplot+[mark=none,blue,dashdotted,very thick] table {./data/NT063EHE.txt};
-		\addplot+[mark=none,green,densely dotted,very thick] table {./data/NT058EHE.txt};
-		\addplot+[mark=none,orange,solid,very thick] table {./data/NT059EHE.txt};
-		\node at (axis cs:-1.75,0.55) {(a)};
-		\legend{$x=1.09$,$x=0.77$,$x=0.73$,$x=0.69$,$x=0.62$}	
-	\end{axis}
-	\begin{axis}[name = plott,at={($(plotru.south)-(0,0.5cm)$)},anchor=north, xmin=-12,xmax=12,ymin=-0.6,ylabel = $R_{XY}$ (\SI{}{\ohm}), ymax=0.6,xlabel=$\mu_0H$ (\SI{}{\tesla}),legend style={legend pos=south west}]
-		\addplot+[mark=none,black,dotted,very thick] table [x expr =\thisrowno{0}, y expr =\thisrowno{1}]{./data/400K.txt};
-		\addplot+[mark=none,red,dashed,very thick] table [x expr =\thisrowno{0}, y expr =\thisrowno{1}]{./data/350K.txt};
-		\addplot+[mark=none,blue,dashdotted,very thick] table [x expr =\thisrowno{0}, y expr =\thisrowno{1}]{./data/300K.txt};
-		\addplot+[mark=none,green,densely dotted,very thick] table [x expr =\thisrowno{0}, y expr =\thisrowno{1}]{./data/200K.txt};
-		\addplot+[mark=none,orange,solid,very thick] table [x expr =\thisrowno{0}, y expr = \thisrowno{1}]{./data/100K.txt};
-		\node at (axis cs:-11,0.55) {(b)};
-		\legend{\SI{400}{\kelvin},\SI{350}{\kelvin},\SI{300}{\kelvin},\SI{200}{\kelvin},\SI{100}{\kelvin}}	
-	\end{axis}
-\end{tikzpicture}
+\includegraphics[width=1.0\columnwidth]{Transport-Fig2.pdf}
 \caption{SHE loops measured of \ce{Mn2Ru$_x$Ga} for (a) various Ru compositions ($0.6<x<1.1$) and (b) temperatures between \SI{10}{\kelvin} and \SI{400}{\kelvin}, which illustrates the change of sign of the spontaneous hall coefficient between $x=0.62$ and $x=0.73$ and \SI{300}{\kelvin} and \SI{350}{\kelvin} respectively.}
 \label{fig:she}
 \end{figure}
 
-%figure4 - Ru conc ms and ehe params
+%figure3 - Ru conc ms and ehe params
 \begin{figure}
-\begin{tikzpicture}
-\begin{axis}[name=plot1,height=4cm,xmin=0.6, xmax=1.1,ymin=-0.15,ymax=0.3, xticklabels={,,}, ylabel = $M_s$ (\SI{}{\BohrMagneton\per\formulaunit})]
-		\addplot+[mark=square,black,only marks, mark size = 3] table [x expr=\thisrowno{0},y expr = \thisrowno{1}]{./data/ruconc.txt}; 
-		\addplot+[mark=none,black,smooth,very thick] table {./data/fitlin.txt};
-		\node at (axis cs:0.625,0.21) {(a)};
-\end{axis}
-\begin{axis}[name=plot2,at={($(plot1.south)$)},anchor=north,height=4cm,xmin=0.6, xmax=1.1,ymin=0,ymax=2.2, hide x axis,  axis y line*=left, ylabel = $\mu_0H_c$ (\SI{}{\tesla})]
-		\addplot+[mark=o,blue,smooth, tension=0.001, mark size = 3, very thick] table [x expr=\thisrowno{0},y expr = \thisrowno{2}]{./data/ruconc3.txt}; 	
-		\node at (axis cs:0.625,2) {(a)};
-\end{axis}
-\begin{axis}[name=plot3,at={($(plot1.south)$)},anchor=north,height=4cm,xmin=0.6, xmax=1.1,ymin=-6,ymax=6, axis y line*=right, xlabel = Ru concentration ($x$), ylabel = SHA (\%)]
-		\addplot+[mark=triangle,red,smooth, tension=0.001, mark size = 3, very thick] table [x expr=\thisrowno{0},y expr = \thisrowno{3}]{./data/ruconc3.txt}; 	
-\end{axis}
-\end{tikzpicture}
+\includegraphics[width=1.0\columnwidth]{Transport-Fig3.pdf}
 \caption{(a) Extracted magnetization at \SI{300}{\kelvin} (in \SI{}{\BohrMagneton\per\formulaunit}), for samples of thickness \SI{70}{\nano\metre} with different \ce{Ru} composition ($0.6<x<1.1$). The change of sign of the magnetization was established by SHE sign reversal at compensation. (b) Coercive field  and spontaneous Hall angle as a function of \ce{Ru} composition, extracted from SHE measurements carried out at \SI{300}{\kelvin}, for the same \ce{MRG} samples as in (a).}
 \label{fig:ru_conc}
 \end{figure}
 
 Fig. \ref{fig:squid} shows the magnetization measurement at \SI{300}{\kelvin} of a typical \ce{MRG} film of \SI{70}{\nano\metre} near compensation of the magnetic sub-lattices. Clear out-of-plane anisotropy with a large coercivity of \SI{1.2}{\tesla} is evident.  A small soft in-plane component is also clearly visible. As the \ce{Ru} concentration is reduced from $x=\num{1.09}$, the magnetization reduces, until it falls practically to zero (\SI{12}{\kilo\ampere\per\metre} or \SI{0.07}{\BohrMagneton\per\formulaunit}) at $x=\num{0.68}$ as shown in Fig. \ref{fig:ru_conc}(a). We can attribute this to the almost perfect compensation of the two \ce{Mn} sub-lattices at room temperature. On further reduction of Ru the magnetization again increases. We denote this as a negative magnetization, coincident with the reversal in sign in the room temperature spontaneous Hall effect (SHE) measurements as shown in Fig. \ref{fig:she}(a). From the SHE measurements with varying Ru content, we extracted the coercivity, $\mu_0H_c$, and spontaneous Hall angle (SHA) (defined as $\rho_H$/$\rho$) (Fig. \ref{fig:ru_conc}(b)). As the magnetization approaches zero the coercivity clearly diverges (the sample closest to compensation at room temperature could not be saturated at an applied field of \SI{5}{\tesla}). The recorded SHA for samples near compensation ($\sim \num{5}\%$) are about a magnitude larger than those reported for other 3d ferromagnets at room temperature (\numrange{0.2}{0.3}\%)\cite{dorleijn1976} and comparable to SHA recorded for amorphous rare earth transition metal alloys\cite{Kim2001}. A high SHA is indicative of much lower carrier concentrations and a high spin polarization.
 
-%fig 5 on strain/thickness goes here
+%fig 4 on strain/thickness goes here
 \begin{figure}
-\begin{tikzpicture}
-	\begin{axis} [name=plota,height=5cm,xmin=0,xmax=400,ymin=-0.005,ymax=0.05,xticklabels={,,}, ylabel = $\delta R_{XY}/\delta T$ (\SI{}{\ohm\per\kelvin}),legend style={legend pos=north west,font=\tiny},]
-		\addplot+[mark=none,black,solid,smooth, very thick] table [x expr = \thisrowno{0}, y expr = \thisrowno{1}]{./data/rvst.txt};
-		\addplot+[mark=none,red,dotted,smooth, very thick] table [x expr = \thisrowno{2}, y expr = \thisrowno{3}]{./data/rvst.txt};
-		\addplot+[mark=none,blue,dashed,smooth, very thick] table [x expr = \thisrowno{4}, y expr = \thisrowno{5}]{./data/rvst.txt};
-		\addplot+[mark=none,green,densely dotted,smooth, very thick] table [x expr = \thisrowno{6}, y expr = \thisrowno{7}]{./data/rvst.txt};
-		%\node at (axis cs:235,0.025) {$T_M=\SI{235}{\kelvin}$};
-		%\node at (axis cs:278,0.031) {$T_M=\SI{278}{\kelvin}$};
-		%\node at (axis cs:335,0.045) {$T_M=\SI{335}{\kelvin}$};
-		%\node at (axis cs:387,0.025) {$T_M=\SI{387}{\kelvin}$};	
-		\legend{\SI{70}{\nano\metre},\SI{34}{\nano\metre},\SI{16}{\nano\metre},\SI{8}{\nano\metre}}	
-	\end{axis}
-	\begin{axis} [name=plotb,at={($(plota.south)$)},anchor=north,height=5cm,xmin=0,xmax=400,ymin=-0.5,ymax=10,xticklabels={,,}, ylabel = $\mu_0H_C$ (\SI{}{\tesla}),legend style={legend pos=north west,font=\tiny}]
-		\addplot+[mark=o,black,smooth, very thick, mark size=2,unbounded coords=discard] table [x expr = \thisrowno{0}, y expr = \thisrowno{1}/10]{./data/Hct.txt};
-		\addplot+[mark=square,red,smooth, very thick,mark size=2,unbounded coords=discard] table [x expr = \thisrowno{0}, y expr = \thisrowno{2}/10]{./data/Hct.txt};
-		\addplot+[mark=triangle,blue,smooth, very thick,mark size=2,unbounded coords=discard] table [x expr = \thisrowno{0}, y expr = \thisrowno{3}/10]{./data/Hct.txt};
-		\addplot+[mark=+,green,,smooth, very thick,mark size=2,unbounded coords=discard] table [x expr = \thisrowno{0}, y expr = \thisrowno{4}/10]{./data/Hct.txt};
-		\addplot+[mark=x,orange,smooth, very thick,mark size=2,unbounded coords=discard] table [x expr = \thisrowno{0}, y expr = \thisrowno{5}/10]{./data/Hct.txt};
-		\legend{\SI{70}{\nano\metre},\SI{34}{\nano\metre},\SI{16}{\nano\metre},\SI{8}{\nano\metre},\SI{4}{\nano\metre}}	
-	\end{axis}
-	\begin{axis} [name=plotc,at={($(plotb.south)$)},anchor=north,height=5cm,xmin=0,xmax=400,ymin=-2,ymax=2.2,xlabel= Temperature (\SI{}{\kelvin}), ylabel = SHA (\%),legend style={legend pos=north west,font=\tiny}]
-		\addplot+[mark=o,black,smooth, very thick, mark size=2,unbounded coords=discard] table [x expr = \thisrowno{0}, y expr = \thisrowno{1}]{./data/SHAt.txt};
-		\addplot+[mark=square,red,smooth, very thick,mark size=2,unbounded coords=discard] table [x expr = \thisrowno{0}, y expr = \thisrowno{2}]{./data/SHAt.txt};
-		\addplot+[mark=triangle,blue,smooth, very thick,mark size=2,unbounded coords=discard] table [x expr = \thisrowno{0}, y expr = \thisrowno{3}]{./data/SHAt.txt};
-		\addplot+[mark=+,green,,smooth, very thick,mark size=2,unbounded coords=discard] table [x expr = \thisrowno{0}, y expr = \thisrowno{4}]{./data/SHAt.txt};
-		\addplot+[mark=x,orange,smooth, very thick,mark size=2,unbounded coords=discard] table [x expr = \thisrowno{0}, y expr = \thisrowno{5}]{./data/SHAt.txt};
-		%\legend{\SI{70}{\nano\metre},\SI{34}{\nano\metre},\SI{16}{\nano\metre},\SI{8}{\nano\metre},\SI{4}{\nano\metre}}	
-	\end{axis}
-\end{tikzpicture}
+\includegraphics[width=1.0\columnwidth]{Transport-Fig4.pdf}
 \caption{(a) Variation of compensation temperature with the thickness of \ce{MRG} film of same \ce{Ru} concentration, given by the derivative of the resistance w.r.t temperature. The compensation temperature shifts to lower temperatures with decreasing thickness. (b) Extracted coercive field and (c) spontaneous Hall angle as a function of temperature for samples with the same \ce{Ru} concentration ($x \sim \num{1.0}$) and various thickness from \SIrange{70}{4}{\nano\metre}.}
 \label{fig:strain}
 \end{figure}
 
 As shown in Fig. \ref{fig:xrd}, the \ce{MRG} films are increasingly strained as the thickness of the film is reduced. It has been predicted that the magnetization may depend strongly on the lattice distortion since this would have an effect on the interaction between neighbouring  atoms. We prepared \ce{MRG} samples of different thickness from \SI{70}{\nano\metre} down to \SI{4}{\nano\metre} and measured their SHE response at different temperatures from \SI{400}{\kelvin} to \SI{4}{\kelvin} in the PPMS. Fig. \ref{fig:she}(b) shows a typical SHE response over the temperature range for the sample of \SI{34}{\nano\metre} thickness. It can be seen that the coercivity diverges to $\sim\SI{9}{\tesla}$ at \SI{350}{\kelvin} and the sign of the SHE loop reverses at \SI{300}{\kelvin}. This indicates that the compensation temperature lies between \SI{300}{\kelvin} and \SI{350}{\kelvin}.  By plotting the derivative of the Hall resistance w.r.t temperature, $\delta R_{XY}/\delta T$, as shown in Fig. \ref{fig:strain}(a), it can be seen that this compensation temperature shifts to lower temperatures as the thickness of the \ce{MRG} is reduced. It is worth noting that the compensation temperature varies with both the Ru content and strain. Since the compensation is achieved by the cancelling out of the moment of the two inequivalent \ce{Mn} sub-lattices, this shift in compensation temperature may be due to the slightly different temperature dependence of the two sub-lattices. As with samples with different \ce{Ru} content, the extracted coercivity and SHA show maximum values near the compensation temperature for each thickness as shown in Fig. \ref{fig:strain}(b) and (c) respectively.
 
-%fig 6 GMR goes here (six figures seems way too many!)
+%fig 5 GMR goes here (six figures seems way too many!)
 \begin{figure}
-\begin{tikzpicture}
-	\begin{axis}[xmin=-5,xmax=5,ymin=0,ymax=1.6, xlabel=$\mu_0H$ (\SI{}{\tesla}),ylabel=MR (\%)]
-		\addplot[mark=none,black,very thick] table[x expr=\thisrowno{0}/10000,y expr = \thisrowno{1}]{./data/gmr2k.txt};
-		%\addplot[domain=-50000:50000,red,very thick] table[x expr=\thisrowno{0}/10000,y expr = \thisrowno{1}+0.5]{./data/gmr4k.txt};
-		\addplot[mark=none,blue,very thick] table[x expr=\thisrowno{0}/10000,y expr = \thisrowno{1}+0.2]{./data/gmr25k.txt};
-		%\addplot[mark=none,green,very thick] table[x expr=\thisrowno{0}/10000,y expr = \thisrowno{1}+1.5]{./data/gmr50k.txt};
-		%\addplot[mark=none,orange,very thick] table[x expr=\thisrowno{0}/10000,y expr = \thisrowno{1}+2.0]{./data/gmr75k.txt};
-		\addplot[mark=none,red,very thick] table[x expr=\thisrowno{0}/10000,y expr = \thisrowno{1}+0.4]{./data/gmr100k.txt};
-		%\addplot[mark=none,cyan,very thick] table[x expr=\thisrowno{0}/10000,y expr = \thisrowno{1}+3.0]{./data/gmr150k.txt};
-		\addplot[mark=none,green,very thick] table[x expr=\thisrowno{0}/10000,y expr = \thisrowno{1}+0.6]{./data/gmr200k.txt};
-		%\addplot[mark=none,teal,very thick] table[x expr=\thisrowno{0}/10000,y expr = \thisrowno{1}+4.0]{./data/gmr300k.txt};
-		\node at (axis cs:-4.5,0.15) {\SI{2}{\kelvin}};
-		\node at (axis cs:-4.5,0.35) {\SI{25}{\kelvin}};
-		\node at (axis cs:-4.5,0.55) {\SI{100}{\kelvin}};
-		\node at (axis cs:-4.5,0.75) {\SI{200}{\kelvin}};	
-	\end{axis}
-	\begin{axis}[xshift=0.47\columnwidth, yshift=3.75cm, width= 3cm, yticklabels={0,0.05,0.1,0.15}, xlabel = T (\SI{}{\kelvin}), ylabel = GMR (\%),xlabel near ticks, tiny, xmin=0, xmax=300, ymin = 0, ymax = 0.15] %/tikz/background rectangle/.style={fill=white}, show background rectangle
-		\addplot [mark=*, only marks, mark size =2] table {./data/gmr.txt};
-		\addplot [mark=none, red, smooth, very thick] table {./data/gmrfit.txt};
-	\end{axis}
-\end{tikzpicture}
+\includegraphics[width=1.0\columnwidth]{Transport-Fig5.pdf}
 \caption{MR of a pseudo spin valve \ce{Mn2Ru$_x$Ga}(15)/\ce{Cu}(2.8)/[\ce{Co}(0.2)/\ce{Pd}(0.6)]$_6$/\ce{Ta}(\SI{3}{\nano\metre})  measured at various temperatures. The curves have been offset vertically for clarity.  The inset shows the temperature variation of the GMR contribution with a fit to $T^{0.5}$ dependence.}
 \label{fig:gmr}
 \end{figure}

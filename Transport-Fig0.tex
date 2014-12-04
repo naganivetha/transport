@@ -2,25 +2,31 @@
 \documentclass[tikz]{standalone}
 \usepackage{pgfplots} 
 \usepackage[product-units = power]{siunitx}
-\usepackage[version=3]{mhchem}
-\usepackage[utf8]{inputenc}
-\usepackage{tikz}
+%\usepackage[version=3]{mhchem}
+%\usepackage[utf8]{inputenc}
+%\usepackage{tikz}
 
 \DeclareSIUnit\BohrMagneton{$\mu_B$}
 \DeclareSIUnit\formulaunit{f.u.}
 \DeclareSIUnit\atomicunit{a.u.}
 \DeclareSIUnit\arbunit{arb.unit}
 
-\pgfplotsset{small,width = 8cm, every axis/.append style={ylabel near ticks, thick, tick style={semithick}}}
+\pgfplotsset{small, every axis/.append style={ylabel near ticks, thick, tick style={semithick}}}
 
 \begin{document}
 \providecommand{\plotdataDir}{data}
 
+\newsavebox{\mybox}
+\savebox{\mybox}{
 \begin{tikzpicture}
-	\begin{axis}[xshift=2.5cm, yshift=2.5cm, width= 1.8cm, xlabel = thickness (\SI{}{\nano\metre}), ylabel = c (\SI{}{\angstrom}),xlabel near ticks, tiny]
+	\begin{axis}[width= 3cm, height = 3cm, scale only axis, xlabel = thickness (\SI{}{\nano\metre}), ylabel = c (\SI{}{\angstrom}),xlabel near ticks, tiny]
 		\addplot table {./data/cvst.txt};
 	\end{axis}
-	\begin{axis}[xmin=39,xmax=64,ymin=2,ymax=10000,ymode=log,xlabel=$2\theta$ (\SI{}{\degree}),ylabel=Intensity (\SI{}{\arbunit})]
+\end{tikzpicture}
+}
+
+\begin{tikzpicture}
+	\begin{axis}[xmin=39,xmax=64,ymin=2, width = 8cm, ymax=10000,ymode=log,xlabel=$2\theta$ (\SI{}{\degree}),ylabel=Intensity (\SI{}{\arbunit})]
 		\addplot[domain=39:64,black,very thick] table[x expr=\thisrowno{0},y expr = \thisrowno{2}]{./data/NT072-HA.txt};
 		\addplot[domain=39:64,red,very thick] table[x expr=\thisrowno{0},y expr = \thisrowno{2}]{./data/NT073-HA.txt};
 		\addplot[domain=39:64,blue,very thick] table[x expr=\thisrowno{0},y expr = \thisrowno{2}]{./data/NT074-HA.txt};
@@ -29,6 +35,7 @@
 		%\node at (axis cs:31,2000) [rotate=90] {MRG (002)};
 		\node at (axis cs:41,2000) [rotate=90] {MgO (002)};
 		\node at (axis cs:62.5,2000) [rotate=90] {MRG (004)};
+		\draw(axis cs:51,400)node{\usebox{\mybox}};
 	\end{axis}
 \end{tikzpicture}
 \end{document}

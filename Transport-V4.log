@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.17)  26 NOV 2014 17:45
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.17)  27 NOV 2014 15:26
 entering extended mode
 **Transport-V4.tex
 ("C:\Users\thiyagan\Documents\Dropbox\TCD\work\Project work\Mn2RuGa\Paper writing\transport\Transport-V4.tex"
@@ -1230,21 +1230,6 @@ File: Transport-Fig5.pdf Graphic file (type pdf)
  <use Transport-Fig5.pdf>
 Package pdftex.def Info: Transport-Fig5.pdf used on input line 126.
 (pdftex.def)             Requested size: 246.0pt x 242.19748pt.
-
-<Transport-Fig5in.pdf, id=103, 226.07562pt x 176.01659pt>
-File: Transport-Fig5in.pdf Graphic file (type pdf)
- <use Transport-Fig5in.pdf>
-Package pdftex.def Info: Transport-Fig5in.pdf used on input line 126.
-(pdftex.def)             Requested size: 73.80075pt x 57.45985pt.
-
-! Bad register code (-1).
-<to be read again> 
-                   !
-l.126 ...0.3\columnwidth]{Transport-Fig5in.pdf}}}}
-                                                  
-A register number must be between 0 and 32767.
-I changed this one to zero.
-
 LaTeX Info: Redefining \bond on input line 127.
 LaTeX Info: Redefining \dbond on input line 127.
 LaTeX Info: Redefining \tbond on input line 127.
@@ -1342,10 +1327,10 @@ rs/thiyagan/Documents/Dropbox/TCD/work/Project work/Mn2RuGa/Paper writing/transp
 an/Documents/Dropbox/TCD/work/Project work/Mn2RuGa/Paper writing/transport/Transport-Fig5.pdf>]) [5]
 ("C:\Users\thiyagan\Documents\Dropbox\TCD\work\Project work\Mn2RuGa\Paper writing\transport\Transport-V4.aux") ) 
 Here is how much of TeX's memory you used:
- 12383 strings out of 494045
- 242519 string characters out of 3148377
+ 12377 strings out of 494045
+ 242396 string characters out of 3148377
  281351 words of memory out of 3000000
- 15504 multiletter control sequences out of 15000+200000
+ 15499 multiletter control sequences out of 15000+200000
  14463 words of font info for 54 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  36i,16n,43p,2241b,1091s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1364,9 +1349,9 @@ public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Transport-V4.pdf (5 pages, 466690 bytes).
+Output written on Transport-V4.pdf (5 pages, 474282 bytes).
 PDF statistics:
- 296 PDF objects out of 1000 (max. 8388607)
+ 298 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

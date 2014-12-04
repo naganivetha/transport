@@ -13,13 +13,23 @@
 \DeclareSIUnit\atomicunit{a.u.}
 \DeclareSIUnit\arbunit{arb.unit}
 
-\pgfplotsset{small,width = 8cm, every axis/.append style={ylabel near ticks, thick, tick style={semithick}}}
+\pgfplotsset{small,every axis/.append style={ylabel near ticks, thick, tick style={semithick}}}
 
 \begin{document}
 \providecommand{\plotdataDir}{data}
 
+\newsavebox\mybox
+\savebox\mybox{
 \begin{tikzpicture}[tight background]
-	\begin{axis}[xmin=-5,xmax=5,ymin=0,ymax=1.2, height =8cm, xlabel=$\mu_0H$ (\SI{}{\tesla}),ylabel=MR (\%)]
+	\begin{axis}[width=3cm, height=1.5cm, yticklabels={0,0.05,0.1,0.15}, xlabel = T (\SI{}{\kelvin}), ylabel = GMR (\%),xlabel near ticks, tiny, xmin=0, xmax=300, ymin = 0, ymax = 0.15,/tikz/background rectangle/.style={fill=white}, show background rectangle,xlabel style={yshift=0.6em}, ylabel style={yshift=-0.65em},] %
+		\addplot [mark=*, only marks, mark size =2] table {./data/gmr.txt};
+		\addplot [mark=none, red, smooth, very thick] table {./data/gmrfit.txt};
+	\end{axis}
+\end{tikzpicture}
+}
+
+\begin{tikzpicture}[tight background]
+	\begin{axis}[xmin=-5,xmax=5,ymin=0,ymax=1.2, width=8cm, height =8cm, xlabel=$\mu_0H$ (\SI{}{\tesla}),ylabel=MR (\%)]
 		\addplot[mark=none,black,very thick] table[x expr=\thisrowno{0}/10000,y expr = \thisrowno{1}]{./data/gmr2k.txt};
 		%\addplot[domain=-50000:50000,red,very thick] table[x expr=\thisrowno{0}/10000,y expr = \thisrowno{1}+0.5]{./data/gmr4k.txt};
 		\addplot[mark=none,blue,very thick] table[x expr=\thisrowno{0}/10000,y expr = \thisrowno{1}+0.2]{./data/gmr25k.txt};
@@ -33,10 +43,8 @@
 		\node at (axis cs:4,0.35) {\SI{25}{\kelvin}};
 		\node at (axis cs:4,0.55) {\SI{100}{\kelvin}};
 		\node at (axis cs:4,0.8) {\SI{200}{\kelvin}};	
+		\node at (axis cs:-2.15,0.95) {\usebox\mybox};
 	\end{axis}
-	%\begin{axis}[xshift=0.95cm, yshift=4.4cm, width= 3cm, yticklabels={0,0.05,0.1,0.15}, xlabel = T (\SI{}{\kelvin}), ylabel = GMR (\%),xlabel near ticks, tiny, xmin=0, xmax=300, ymin = 0, ymax = 0.15,/tikz/background rectangle/.style={fill=white}, show background rectangle,xlabel style={yshift=0.6em}, ylabel style={yshift=-0.65em},] %
-		%\addplot [mark=*, only marks, mark size =2] table {./data/gmr.txt};
-		%\addplot [mark=none, red, smooth, very thick] table {./data/gmrfit.txt};
-	%\end{axis}
+
 \end{tikzpicture}
 \end{document}

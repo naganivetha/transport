@@ -19,7 +19,7 @@
 \providecommand{\plotdataDir}{data}
 
 \begin{tikzpicture}
-\begin{axis}[xmin=1.7, xmax=3.7,ymin=0.7,ymax=2.4, xlabel = $(\frac{c}{a}-1)\times 100$ (\%), ylabel = Spontaneous Hall angle (\%)]
+\begin{axis}[xmin=1.7, xmax=3.7,ymin=1,ymax=2.8, xlabel = $(\frac{c}{a}-1)\times 100$ (\%), ylabel = Spontaneous Hall angle (\%)]
 		\addplot [mark=*,black,only marks, mark size = 3] table [x expr=\thisrowno{1},y expr = \thisrowno{6}]{./data/SHAall.txt}; 
 		%\addplot [mark=none,black,smooth,very thick] table [y={create col/linear regression={y = SHAvx}}]{./data/SHAall.txt};
 \end{axis}

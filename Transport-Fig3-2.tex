@@ -19,9 +19,17 @@
 \providecommand{\plotdataDir}{data}
 
 \begin{tikzpicture}
-\begin{axis}[xmin=0.6, xmax=1.15,ymin=0,ymax=6.5, xlabel = Ru concentration ($x$), ylabel = Spontaneous Hall angle (\%)]
+\begin{axis}[xmin=0.6, xmax=1.15,ymin=0,ymax=6.5, xlabel = Ru concentration ($x$), axis y line*=left,  ylabel = Spontaneous Hall angle (\%), legend pos=south west]
 		\addplot [mark=*,black,only marks, mark size = 3] table [x expr=\thisrowno{0},y expr = \thisrowno{7}]{./data/SHAall.txt}; 
 		\addplot [mark=none,black,smooth,very thick] table [y={create col/linear regression={y = SHAvx}}]{./data/SHAall.txt};
+		\legend{SHA}
+\end{axis}
+\begin{axis}[xmin=0.6, xmax=1.15,ymin=0,ymax=1,  axis y line*=right, hide x axis, ylabel = $\rho$ (\SI{}{\milli\ohm\centi\meter}),legend pos=north east]
+		\addplot [mark=square*,red,only marks, mark size = 2] table [x expr=\thisrowno{0},y expr = \thisrowno{2}*0.05]{./data/SHAall.txt}; 
+		\addplot [mark=triangle*,blue,only marks, mark size = 2] table [x expr=\thisrowno{0},y expr = \thisrowno{3}]{./data/SHAall.txt}; 
+		%\addplot [mark=none,red,smooth,very thick] table [y={create col/linear regression={y = rhoxy}}]{./data/SHAall.txt};
+		\addplot [mark=none,blue,dotted,very thick] table [y={create col/linear regression={y = rhoxx}}]{./data/SHAall.txt};
+		\legend{$\rho_{xy}\times 50$,$\rho_{xx}$}
 \end{axis}
 \end{tikzpicture}
 \end{document}

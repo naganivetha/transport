@@ -59,11 +59,9 @@ Cubic ferromagnetic Heusler compounds are a family of magnetic materials that
 often exhibit higher spin polarization at the Fermi level than binary 
 ferromagnetic $3d$ alloys\cite{Graf2013}. Some of the materials are half-
 metals with a gap in the spin-polarized density of states for one spin band 
-which should make them ideal candidates for spin-valves or MTJs\cite{PhysRevB.
-28.1745,Wang2009,Takahashi2011,Tsunegi2008}.  Since the prediction by van 
+which should make them ideal candidates for spin-valves or MTJs\cite{PhysRevB.28.1745,Wang2009,Takahashi2011,Tsunegi2008}.  Since the prediction by van 
 Leuken and de Groot in $1995$, of a half-metallic material with two in-
-equivalent magnetic sub-lattices whose moments cancel out \cite{PhysRevLett.50
-.2024}, researchers have worked on fabricating such a material. While 
+equivalent magnetic sub-lattices whose moments cancel out \cite{PhysRevLett.50.2024}, researchers have worked on fabricating such a material. While 
 electronic structure calculations predicted several such compounds\cite{
 Wurmehl2006, Hu2012, Galanakis2006}, fabrication of such materials had failed
 \cite{Hu2012,PhysRevB.79.100406}. In $2014$, Kurt \textit{et. al.} reported 
@@ -107,16 +105,17 @@ using a Quantum Design superconducting quantum interference device (SQUID)
 magnetometer. The transport measurements were conducted on unpatterned \ce{MRG
 } films in a physical properties measurement system (PPMS) for temperatures 
 from \SIrange{10}{400}{\kelvin}. The maximum applied magnetic fields, $\mu_0H$
-, for the two systems were \SI{5}{\tesla} and \SI{14}{\tesla} respectively. A 
-summary of sample properties is provided in Table \ref{tab:samples}. We also 
-incorporated the \ce{MRG} as the hard layer into a pseudo-spin-valve with the 
-structure, \ce{MgO}/ \ce{MRG}(15)/\ce{Cu}(2.8)/[\ce{Co}(0.2)/\ce{Pd}(0.6)]$_6$
-/\ce{Ta}(\SI{3}{\nano\metre}) in order to investigate the spin dependent 
-transport. The \ce{MRG} layer was grown at \SI{250}{\celsius}, then cooled 
-down to room temperature, and was subsequently transferred to a different 
-deposition chamber for the \ce{Cu}/[\ce{Co}/\ce{Pd}] multilayer deposition. 
-Atomic force microscopy measurements of the \ce{MRG} film showed a roughness 
-of $\sim \SI{0.2}{\nano\metre}$, free of pinholes. 
+, for the two systems were \SI{5}{\tesla} and \SI{14}{\tesla} respectively. 
+%A 
+%summary of sample properties is provided in Table \ref{tab:samples}. We also 
+%incorporated the \ce{MRG} as the hard layer into a pseudo-spin-valve with the 
+%structure, \ce{MgO}/ \ce{MRG}(15)/\ce{Cu}(2.8)/[\ce{Co}(0.2)/\ce{Pd}(0.6)]$_6$
+%/\ce{Ta}(\SI{3}{\nano\metre}) in order to investigate the spin dependent 
+%transport. The \ce{MRG} layer was grown at \SI{250}{\celsius}, then cooled 
+%down to room temperature, and was subsequently transferred to a different 
+%deposition chamber for the \ce{Cu}/[\ce{Co}/\ce{Pd}] multilayer deposition. 
+%Atomic force microscopy measurements of the \ce{MRG} film showed a roughness 
+%of $\sim \SI{0.2}{\nano\metre}$, free of pinholes. 
 
 %table with properties
 %\begingroup
@@ -150,65 +149,18 @@ of $\sim \SI{0.2}{\nano\metre}$, free of pinholes.
 \section{Results and Discussion}
 \label{sec:results_discussion}
 
-%%fig 0 - XRD - some tweaking
-%\begin{figure}
-%\includegraphics[width=1.0\columnwidth]{Transport-Fig0.pdf}
-%\caption{XRD of thin films of \ce{Mn2Ru$_x$Ga} of thickness from \SIrange{70}{
-%4}{\nano\metre} grown on \ce{MgO} substrates. Inset shows the dependence of 
-%the out-of-plane lattice parameter (c) on the thickness of the film, 
-%indicating that the substrate induced strain is increasingly relaxed as the 
-%thickness increases.}
-%\label{fig:xrd}
-%\end{figure}
-
 The crystal structure of the cubic \ce{MRG} films with different thickness 
 and compositions were probed using $2\theta-\theta$ x-ray diffraction (XRD). 
-%as shown in Fig. \ref{fig:xrd}. 
 The out-of-plane lattice parameter, $c$, is between \SI{0.598}{\nano\metre} 
 and \SI{0.618}{\nano\metre}, depending on the 
 \ce{Ru} concentration and film thickness. We find that  $c$ increases 
-exponentially with reducing film thickness. %(insert of Fig. \ref{fig:xrd})% 
-The in-plane lattice parameter, $a$, determined from reciprocal space maps was 
+exponentially with reducing film thickness. The in-plane lattice parameter, $a
+$, determined from reciprocal space maps was 
 found to be \SI{0.596}{\nano\metre} for all samples, which is precisely 
 matched to that of the \ce{MgO} substrate ($\sqrt{2} a_0\left(\ce{MgO} \right)
  = \SI{0.5956}{\nano\metre}$). This confirms the cubic nature of the \ce{MRG} 
 films with a slight tetragonal out-of-plane distortion ($c/a-1$ between \num{1
 .8}\% and \num{3.6}\%).
-
-%%fig 1 - SQUID ok - is it needed? 
-%\begin{figure}
-%\includegraphics[width=1.5\columnwidth]{Transport-Fig1.pdf}
-%\caption{In-plane and out-of-plane magnetization loops of \ce{Mn2Ru$_x$Ga} 
-%sample of thickness \SI{70}{\nano\metre}, measured in a SQUID magnetometer at 
-%\SI{300}{\kelvin}.}
-%\label{fig:squid}
-%\end{figure}
-
-%fig 2 - ehe curves of Ru_conc and temp dependence? 
-%\begin{figure}
-%\includegraphics[width=1.0\columnwidth]{Transport-Fig2.pdf}
-%\caption{SHE loops measured of \ce{Mn2Ru$_x$Ga} for (a) various Ru 
-%compositions ($0.6<x<1.1$) and (b) temperatures between \SI{10}{\kelvin} and 
-%\SI{400}{\kelvin}, which illustrates the change of sign of the spontaneous 
-%hall coefficient between $x=0.62$ and $x=0.73$ and \SI{300}{\kelvin} and \SI{
-%350}{\kelvin} respectively.}
-%\label{fig:she}
-%\end{figure}
-
-%figure3 - Ru conc ms and ehe params
-%\begin{figure}
-%\includegraphics[width=1.0\columnwidth]{Transport-Fig3.pdf}
-%\caption{(a) Extracted magnetization at \SI{300}{\kelvin} (in \SI{}{
-%\BohrMagneton\per\formulaunit}), for samples of thickness \SI{70}{\nano\metre}
- %with different \ce{Ru} composition ($0.6<x<1.1$). The change of sign of the 
-%magnetization was established by SHE sign reversal at compensation. (b) 
-%Coercive field  and spontaneous Hall angle as a function of \ce{Ru} 
-%composition, extracted from SHE measurements carried out at \SI{300}{\kelvin}
-%, for the same \ce{MRG} samples as in (a).}
-%\label{fig:ru_conc}
-%\end{figure}
-
-
 
 %figure3 - SHA vs x (all samples)
 \begin{figure}
@@ -219,26 +171,21 @@ linear fit of the data sets.}
 \label{fig:SHAvx}
 \end{figure}
 
-
-%Fig. \ref{fig:squid} shows the magnetization measurement at \SI{300}{\kelvin} 
-%of a typical \ce{MRG} film of \SI{70}{\nano\metre} near compensation of the 
-%magnetic sub-lattices. 
 SQUID magnetometry shows clear out-of-plane anisotropy in all the samples we 
 have studied.  A small soft in-plane component is also 
 present. As the \ce{Ru} concentration is reduced from $x=\num{1.09}$, 
 the magnetization reduces, until it falls practically to zero (\SI{12}{
 \kilo\ampere\per\metre} or \SI{0.07}{\BohrMagneton\per\formulaunit}) at $x=
-\num{0.68}$. 
-%as shown in Fig. \ref{fig:ru_conc}(a). 
-We can attribute this to the almost perfect compensation of the two \ce{Mn} 
+\num{0.68}$. We can attribute this to the almost perfect compensation of the 
+two \ce{Mn} 
 sub-lattices at room temperature. On further reduction of Ru the 
 magnetization again increases, coincident with the reversal in sign in the 
 room temperature spontaneous Hall effect (SHE) measurements. From the SHE 
 measurements we also note that as the magnetization approaches zero the 
 coercivity clearly diverges (since $H_c=2K_u/M_s$).
-%as shown in Fig. \ref{fig:she}(a). 
 From the SHE measurements with varying Ru content, we extracted the 
-spontaneous Hall angle (SHA) (defined as $\rho_{xy}$/$\rho_{xx}$) (Fig. \ref{fig:SHAvx}).  
+spontaneous Hall angle (SHA) (defined as $\rho_{xy}$/$\rho_{xx}$) (Fig. \ref{
+fig:SHAvx}).  
 The recorded SHA for samples near compensation ($\sim \num{5}\%$) are about a 
 magnitude larger than those reported for other 3d ferromagnets at room 
 temperature (\numrange{0.2}{0.3}\%)\cite{dorleijn1976} and comparable to SHA 
@@ -277,12 +224,6 @@ in the PPMS. As mentioned above the out-of-plane lattice parameter. $c$,
 increased exponentially with reducting sample thickness allowing us to have a 
 control of the slight tetragonal distortion of the samples with a similar Ru 
 composition. 
-%Fig. \ref{fig:she}(b) shows 
-%a typical SHE response over the temperature range for the sample of \SI{34}{
-%\nano\metre} thickness. It can be seen that the coercivity diverges to $
-%\sim\SI{9}{\tesla}$ at \SI{350}{\kelvin} and the sign of the SHE loop 
-%reverses at \SI{300}{\kelvin}. This indicates that the compensation 
-%temperature lies between \SI{300}{\kelvin} and \SI{350}{\kelvin}.  
 By plotting the derivative of the Hall resistance w.r.t temperature, $\delta R_{
 XY}/\delta T$, as shown in Fig. \ref{fig:strain}(a), it can be seen that this 
 compensation temperature shifts to lower temperatures as the thickness of the 

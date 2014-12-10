@@ -1,12 +1,12 @@
-%fig 5 GMR goes here (six figures seems way too many!)
+%figure3-new - SHA vs c/a (all samples)
 \documentclass[tikz]{standalone}
 \usepackage{pgfplots} 
 \usepackage[product-units = power]{siunitx}
 \usepackage[version=3]{mhchem}
 \usepackage[utf8]{inputenc}
 \usepackage{tikz}
+\usepackage{pgfplotstable}
 \usetikzlibrary{calc}
-\usetikzlibrary{backgrounds}
 
 \DeclareSIUnit\BohrMagneton{$\mu_B$}
 \DeclareSIUnit\formulaunit{f.u.}
@@ -19,9 +19,8 @@
 \providecommand{\plotdataDir}{data}
 
 \begin{tikzpicture}
-	\begin{axis}[yticklabels={0,0.05,0.1,0.15}, xlabel = T (\SI{}{\kelvin}), ylabel = GMR (\%),xlabel near ticks, xmin=0, xmax=300, ymin = 0, ymax = 0.15, xlabel style={yshift=0.6em}, ylabel style={yshift=-0.65em},] %
-		\addplot [mark=*,only marks, mark size =2] table {./data/gmr.txt};
-		\addplot [mark=none, red, smooth, very thick] table {./data/gmrfit.txt};
-	\end{axis}
+\begin{axis}[xmin=1.7, xmax=3.7,ymin=1,ymax=2.8, xlabel = $(\frac{c}{a}-1)\times 100$ (\%), ylabel = Spontaneous Hall angle (\%)]
+		\addplot [mark=*,black,only marks, mark size = 3] table [x expr=\thisrowno{1},y expr = \thisrowno{6}]{./data/SHAall.txt}; 
+\end{axis}
 \end{tikzpicture}
 \end{document}
